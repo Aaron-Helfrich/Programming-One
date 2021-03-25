@@ -1,24 +1,26 @@
 import java.util.*; 
 
+
 public class DiceSim{
 
 
-    static Scanner sc = new Scanner(system.in);
+    static Scanner sc = new Scanner(System.in);
   
-    public static void main(String args[]) 
-    
-    { 
+    public static void main(String args[]){ 
+
         // create instance of Random class 
         Random rand = new Random(); 
 
          // Generate random integers in range 1 to 6
+        int type = sc.nextInt();
 	  int rand_array[];
-	  int N = sc.nextInt(); 
-	  rand_array = new int[N];
-      for (int i = 0; i < N; i++); 
-        {
-            rand_array[i] = rand.nextInt{6);
-                System.out.println("dice " + i+1 + " is " + rand_array[i]);
+	  int TimesToRoll = sc.nextInt(); 
+	  rand_array = new int[TimesToRoll];
+      for (int i = 0; i <= type; i++) 
+        
+      {
+            rand_array[i] = rand.nextInt(TimesToRoll);
+                System.out.println("dice " + (i+1) + " is " + rand_array[i]);
         }
         
          
